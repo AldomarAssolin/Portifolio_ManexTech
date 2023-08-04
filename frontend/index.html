@@ -17,9 +17,7 @@
                     <img src="images/logo/LogoTransp120.png" alt="logomarca, círculo azul com as iniciais MT e o nome ManexTech">
                 </div>
             </div>
-            <div class="navbar_desktop">
-                <div class="icon_menu">
-                </div>
+            <div class="nav">
                 <div class="navbar">
                     <ul class="menu_desktop">
                         <li><a href="#" class="link_menu">Home</a></li>
@@ -27,7 +25,7 @@
                         <li><a href="Pages/projects.html" class="link_menu">Projetos</a></li>
                         <li><a href="Pages/cursos.html" class="link_menu">Cursos</a></li>
                         <li><a href="" class="link_menu">Contatos</a></li>
-                    </ul>
+                    </ul><!--menu_desktop-->
                     <ul class="menu_mobile">
                         <span><i class="fa-solid fa-2xl fa-bars"></i></span>
                         <li><a href="#" class="link_menu">Home</a></li>
@@ -35,10 +33,10 @@
                         <li><a href="Pages/projects.html" class="link_menu">Projetos</a></li>
                         <li><a href="Pages/cursos.html" class="link_menu">Cursos</a></li>
                         <li><a href="" class="link_menu">Contatos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                    </ul><!--menu_mobile-->
+                </div><!--navbar-->
+            </div><!--nav-->
+        </div><!--divTop-->
     </header>
     <main>
         <div class="container">
@@ -52,28 +50,146 @@
                                 <p class="greeting_phrase">Está um dia lindo hoje!</p>
                             </div>
                             <div class="greeting_description">
-                                <p id="description" class="description">
-                                    Me chamo Aldomar Assolin, tenho <span class="age">40 anos</span>, Sou de Santa Maria, Rio Grande so Sul.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                <div id="description" class="description">
+                                    <h3>Olá, eu sou Aldomar!</h3>
+                                        <p>Tenho <span class="myAge">[Sua Idade]</span> anos e sou estudante de Análise e Desenvolvimento de Sistemas.</p>
+                                    <p>Seja bem-vindo ao meu portfólio! Aqui você encontrará uma amostra dos meus projetos e habilidades de desenvolvimento.</p>
+                                    <p>Continue navegando para conhecer mais sobre mim e o que posso fazer.</p>
+                                </div><!--description-->
+                            </div><!--greeting_description-->
+                        </div><!--greeting-->
+                    </div><!--banner_content_box-->
+                </div><!--banner_content-->
+            </section><!--banner-->
         
             <section id="about" class="about">
                 <div class="about_content">
                     <div class="about_content_left">
                         <div class="text_box">
-                            <h1 class="heading w100">Quem sou</h1>
-                            <h2>Quem sou</h2>
-                            <h3>Quem sou</h3>
-                        </div>
-                    </div>
+                            <h1 class="heading w100">Sobre Mim</h1>
+                            <p>Olá! Sou [Seu Nome], um entusiasta de tecnologia e apaixonado por programação. Com [Sua Idade] anos, estou atualmente cursando Análise e Desenvolvimento de Sistemas na faculdade, onde venho aprimorando minhas habilidades e conhecimentos em desenvolvimento web.</p>
+                            <p>Meu interesse em programação começou quando aprendi a criar minhas primeiras páginas web usando HTML e CSS. Com o tempo, a curiosidade me levou a explorar o mundo do backend, onde aprendi a criar aplicações usando NodeJS, PHP e Python, além de trabalhar com bancos de dados SQL e NoSQL.</p>
+                            <p>Além das habilidades técnicas, também desenvolvi competências em soft skills, como comunicação eficaz, trabalho em equipe e capacidade de aprendizado rápido. Acredito que essas habilidades são fundamentais para uma colaboração eficiente em projetos e para fornecer soluções eficazes para os clientes.</p>
+                            <p>Aqui estão algumas das minhas habilidades:</p>
+                            <ul>
+                                <li>Desenvolvimento Frontend: HTML, CSS, JavaScript, React</li>
+                                <li>Desenvolvimento Backend: NodeJS, PHP, Python</li>
+                                <li>Bancos de Dados: SQL e NoSQL</li>
+                                <li>Comunicação Eficaz</li>
+                                <li>Trabalho em Equipe</li>
+                                <li>Aprendizado Rápido</li>
+                            </ul>
+                            <p>Estou sempre em busca de novos desafios e oportunidades para aplicar meus conhecimentos em projetos interessantes. Se você está procurando um desenvolvedor dedicado e entusiasmado, entre em contato! Estou ansioso para trabalhar com você.</p>
+                        </div><!--text_box-->
+                    </div><!--about_content_left-->
+                    <div class="about_content_right">
+                        <div class="about_content_image w100">
+                            <picture>
+                                <source media="(min-width:650px)" srcset="images/image640x480.png">
+                                <source media="(min-width:465px)" srcset="images/image320x475.png">
+                                <img src="images/image320x475.png" alt="image" style="width:auto;">
+                            </picture>
+                        </div><!--about_content_image-->
+                    </div><!--about_content_right-->
+                </div><!--about_content-->
+            </section><!--about-->
+
+            <section id="portfolio" class="portfolio">
+                <div class="portfolio_content">
+                    <div class="title">
+                        <h1 class="heading">Portifólio</h1>
+                        <h2 class="caption">Portfólio de Desenvolvimento</h2>
+                    </div><!--title-->
+                    <div class="cards_box">
+                        <div class="cards_content">
+                            <div class="card">
+                                <div class="card_header">
+                                    <div class="feature_image">
+                                        <img src="images/image320x240.png" alt="">
+                                    </div><!--feature_image-->
+                                    <div class="image_mini_box">
+                                        <div class="image_mini">
+                                            <img src="images/image320x240.png" alt="">
+                                        </div><!--image_mini-->
+                                        <div class="image_mini">
+                                            <img src="images/image320x240.png" alt="">
+                                        </div><!--image_mini-->
+                                        <div class="image_mini">
+                                            <img src="images/image320x240.png" alt="">
+                                        </div><!--image_mini-->
+                                    </div><!--image_mini_box-->
+                                </div><!--card_header-->
+                                <div class="card_body">
+                                    <h3>Título</h3>
+                                    <p>Descrição do projeto desenvolvido</p>
+                                </div><!--card_body-->
+                                <div class="card_footer">
+                                    <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_buttom">Saiba mais</a>
+                                </div><!--card_footer-->
+                            </div><!--card-->
+                        </div><!--cards_content-->
+                        <div class="button_projects">
+                            <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_buttom">Ver mais detalhes</a>
+                        </div><!--button_projects-->
+                    </div><!--cards_box-->
+                </div><!--portfolio_content-->
+            </section><!--portfolio-->
+
+            <section id="qualifications" class="qualifications">
+                <div class="title">
+                    <h1 class="heading">Qualificações</h1>
+                    <h2 class="caption">Habilidades e Projetos</h2>
+                </div><!--title-->
+                <div class="habilidades">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                    <li>Desenvolvimento Frontend: HTML5, CSS3, JavaScript, React</li>
+                    <li>Desenvolvimento Backend: Node.js, PHP, Python</li>
+                    <li>Bancos de Dados: SQL e NoSQL</li>
+                    <li>Versionamento de Código: Git</li>
+                    <li>Integração de APIs RESTful</li>
+                    <li>Layout Responsivo e Design de Interfaces</li>
+                    </ul>
+                </div><!--habilidades-->
+                <div class="projetos">
+                    <h3>Projetos Pessoais</h3>
+                    
+                    <div class="card_projects">
+                        <div class="icon"><i class="fa-solid fa-2xl fa-laptop-code"></i></div>
+                        <p>
+                            <span class="project_name">[Nome do Projeto 1]</span> - <span class="project_data">[Data de Criação]</span>
+                        </p>
+                        <p>
+                            - Descrição breve do projeto e das tecnologias utilizadas.
+                        <p>
+                            <a href="#">Demonstração</a>
+                        </p>
+                    </div><!--card_projects-->
+                    <!-- Adicione outros projetos pessoais relevantes -->
+                </div><!--projetos-->
+                <div class="softskills">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                    <li>Comunicação Eficaz</li>
+                    <li>Trabalho em Equipe</li>
+                    <li>Capacidade de Aprendizado Rápido</li>
+                    <li>Resolução de Problemas</li>
+                    <li>Organização e Gerenciamento de Tempo</li>
+                    </ul>
+                </div><!--softskills-->
+            </section><!--qualifications-->
+
+            <section id="education" class="education">
+                <div class="title">
+                    <h1 class="heading">Formação</h1>
                 </div>
             </section>
-        
-        
+
+            <section id="contact" class="contact">
+                <div class="title">
+                    <h2 class="caption">Entre em contato</h2>
+                </div>
+            </section>
         
         
         
