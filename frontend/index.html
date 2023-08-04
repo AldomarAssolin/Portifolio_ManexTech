@@ -124,12 +124,12 @@
                                     <p>Descrição do projeto desenvolvido</p>
                                 </div><!--card_body-->
                                 <div class="card_footer">
-                                    <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_buttom">Saiba mais</a>
+                                    <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_button">Saiba mais</a>
                                 </div><!--card_footer-->
                             </div><!--card-->
                         </div><!--cards_content-->
                         <div class="button_projects">
-                            <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_buttom">Ver mais detalhes</a>
+                            <a href="http://manexstore.com.br" target="_blank" rel="noopener noreferrer" class="link_button">Ver mais detalhes</a>
                         </div><!--button_projects-->
                     </div><!--cards_box-->
                 </div><!--portfolio_content-->
@@ -182,36 +182,108 @@
             <section id="education" class="education">
                 <div class="title">
                     <h1 class="heading">Formação</h1>
-                </div>
-            </section>
+                </div><!--title-->
+                    <div class="cards_box">
+                        <div class="cards_content">
+                            <div class="cards_cursos">
+                                <div class="course">
+                                    <header class="card_course_header">
+                                        <div class="card_course_image"></div><!--card_course_image-->
+                                        <div class="card_courses_names">
+                                            <div class="card_courses_titles">
+                                                <h3>Nome do Curso</h3>
+                                                <h4>Nome da Instituição</h4>
+                                            </div>
+                                            <div class="card_course_infos">
+                                                <p><span class="date_start_course">[Data início]</span> - <span class="date_end_course">[Data conclusão]</span></p>
+                                                <p>Graduação</p>
+                                            </div>
+                                        </div><!--card_courses_names-->
+                                    </header><!--card_course_header-->
+                                    <main class="card_course_body">
+                                        <div class="card_course_description">
+                                            <h4>Descrição:</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris neque urna, suscipit eget efficitur vel, tincidunt nec nisl. Nam mollis massa eget nisi elementum, mollis vestibulum nunc scelerisque. Vestibulum sed ullamcorper sem, ac iaculis felis. Etiam vitae gravida odio, non vulputate lorem.</p>
+                                        </div>
+                                    </main><!--card_course_body-->
+                                    <footer class="card_course_footer">
+                                        <div class="card_course_button">
+                                            <a href="#" class="link_button">Mais Detalhes</a>
+                                        </div>
+                                    </footer><!--card_course_footer-->
+                                </div><!--course-->
+
+                            </div><!--cards_courses-->
+                        </div><!--cards_content-->
+                    </div><!--cards_box-->
+            </section><!--education-->
 
             <section id="contact" class="contact">
                 <div class="title">
                     <h2 class="caption">Entre em contato</h2>
-                </div>
-            </section>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                </div><!--title-->
+                <div class="contact_form">
+                    <form action="#" method="POST">
+                        <div class="form_components">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div><!--form_components-->
+                        
+                        <div class="form_components">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div><!--form_components-->
+                        
+                        <div class="form_components">
+                            <label for="message">Mensagem:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div><!--form_components-->
+                        
+                        <div class="form_button"><button type="submit">Enviar</button></div><!--form_button-->
+                    </form>
+                </div><!--contact_form-->
+            </section><!--contact-->
         </div><!--container-->
-
-
-
-
-
     </main>
-    <footer>
-        <div class="footer_top"></div>
-        <div class="footer_left"></div>
-        <div class="footer_right"></div>
-    </footer>
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_logo">
+                <img src="images/logo/TechMobTransp.png" alt="">
+            </div><!--footer_logo-->
+        </div><!--footer_top-->
+        <div class="footer_middle flex">
+            <div class="footer_left">
+                <div class="menu_footer">
+                    <ul class="menu_footer_list">
+                        <li><a href="#" class="link_menu">Home</a></li>
+                        <li><a href="" class="link_menu">Sobre</a></li>
+                        <li><a href="Pages/projects.html" class="link_menu">Projetos</a></li>
+                        <li><a href="Pages/cursos.html" class="link_menu">Cursos</a></li>
+                        <li><a href="" class="link_menu">Contatos</a></li>
+                    </ul><!--menu_footer_list-->
+                </div><!--menu_footer-->
+            </div><!--footer_left-->
+            <div class="footer_right">
+                <div class="footer_social_medias">
+                    <div class="facebbok flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <p><a href="#" class="special_link">Facebook</a></p>
+                    </div><!--facebbok-->
+                    <div class="instagram flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                        <a href="#" class="special_link">Instagram</a>
+                    </div><!--instagram-->
+                </div><!--footer_social_medias-->
+            </div><!--footer_right-->
+        </div><!--footer_middle-->
+        <div class="footer_bottom">
+            Todos os direitos Reservados&#174;
+        </div><!--footer_bottom-->
+    </footer><!--footer-->
 
     <script src="js/scripts.js"></script>
 </body>

@@ -62,7 +62,7 @@
     --fnt-title_secondary: 2.5rem/2.75rem 'Poppins', sans-serif;
     --fnt-subtitle_primary: 2.25rem/2.75rem 'Poppins', sans-serif;
     --fnt-subtitle_secondary: 2rem/2.75rem 'Poppins', sans-serif;
-    --fnt-subtitle_complement_secondary: 1.75rem/2.75rem 'Poppins', sans-serif;
+    --fnt-subtitle_complement_primary: 1.75rem/2.75rem 'Poppins', sans-serif;
     --fnt-subtitle_complement_secondary: 1.5rem/2.75rem 'Poppins', sans-serif;
 
     --fnt-text: 400 1rem/1.5rem 'Lato', sans-serif;
@@ -112,11 +112,6 @@ html{
 
 body{
     background-color: var(--bg-clr);
-    position: relative;
-}
-
-main{
-    min-height: 48vh;
 }
 
 section{
@@ -241,6 +236,10 @@ ul{
     padding: 1rem;
 }
 
+.flex{
+    display: flex;
+}
+
 /* titles */
 
 .heading,.caption, .text_box{
@@ -304,7 +303,7 @@ ul{
     color: var(--clr_dark-text_primary);
 }
 
-.link_buttom{
+.link_button{
     color: var(--text-button);
     background: var(--bg-button_primary);
     padding: .25rem .5rem;
@@ -334,7 +333,8 @@ ul{
 
 /* FOOTER */
 
-footer{
+footer.footer{
+    width: 100%;
     padding: 5em;
     background: var(--bg-footer);
 }
