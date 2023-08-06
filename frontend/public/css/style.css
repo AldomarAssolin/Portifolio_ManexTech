@@ -111,7 +111,7 @@ html{
 }
 
 body{
-    background-color: var(--bg-clr);
+    background-color: var(--bg-clr)!important;
     position: relative;
 }
 
@@ -273,6 +273,12 @@ ul{
     border-radius: .75rem;
     margin-top: .75rem;
     background-color: var(--clr-mark_subtitle);
+}
+
+/* CARDS */
+
+.card{
+    background: transparent !important;
 }
 
 /* buttom */
