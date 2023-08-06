@@ -28,12 +28,41 @@ app.get('/', (req, res) => {
     
 });
 
-<<<<<<< HEAD
 app.get('/projects', (req, res) => {
 
   try {
+
+    // Importar o conteúdo do package.json como uma string
+    const packageJsonContent = fs.readFileSync('./package.json', 'utf-8');
+
+    // Converter o conteúdo do JSON para um objeto
+    const packageJson = JSON.parse(packageJsonContent);
+
+    const authorName = packageJson.author;
   
-      res.render('projects', {projects}); // Renderiza o arquivo EJS chamado "index.ejs" na pasta "views"
+      res.render('projects', {projects, authorName}); // Renderiza o arquivo EJS chamado "index.ejs" na pasta "views"
+    
+    } catch (error) {
+      console.error('Erro:', error);
+      res.status(500).send('Erro interno do servidor');
+    }
+  
+  
+});
+
+app.get('/cursos', (req, res) => {
+
+  try {
+
+    // Importar o conteúdo do package.json como uma string
+    const packageJsonContent = fs.readFileSync('./package.json', 'utf-8');
+
+    // Converter o conteúdo do JSON para um objeto
+    const packageJson = JSON.parse(packageJsonContent);
+
+    const authorName = packageJson.author;
+  
+      res.render('cursos', {cursos, authorName}); // Renderiza o arquivo EJS chamado "index.ejs" na pasta "views"
     
     } catch (error) {
       console.error('Erro:', error);
@@ -45,8 +74,5 @@ app.get('/projects', (req, res) => {
 
 app.listen(3003, () => {
     console.log('Servidor iniciado na porta 3003');
-=======
-app.listen(3003, () => {
-    console.log('Servidor iniciado na porta 3000');
->>>>>>> 83c469b425318aaabc374fb36de2751319f7575e
+
 });
