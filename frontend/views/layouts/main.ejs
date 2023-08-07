@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo/FundoEscuro.png" type="image/x-icon">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/24ae7fcf09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div class="divTop">
+            <div class="logo">
+                <div class="img_logo">
+                    <img src="images/logo/LogoTransp120.png" alt="logomarca, círculo azul com as iniciais MT e o nome ManexTech">
+                </div>
+            </div>
+            <div class="nav">
+                <div class="navbar">
+                    <ul class="menu_desktop">
+                        <li><a href="/" class="link_menu">Home</a></li>
+                        <li><a href="/about" class="link_menu">Sobre</a></li>
+                        <li><a href="/projects" class="link_menu">Projetos</a></li>
+                        <li><a href="/cursos" class="link_menu">Cursos</a></li>
+                        <li><a href="" class="link_menu">Contatos</a></li>
+                    </ul><!--menu_desktop-->
+                    <ul class="menu_mobile">
+                        <span><i class="fa-solid fa-2xl fa-bars"></i></span>
+                        <li><a href="/" class="link_menu">Home</a></li>
+                        <li><a href="/about" class="link_menu">Sobre</a></li>
+                        <li><a href="/projects" class="link_menu">Projetos</a></li>
+                        <li><a href="/cursos" class="link_menu">Cursos</a></li>
+                        <li><a href="" class="link_menu">Contatos</a></li>
+                    </ul><!--menu_mobile-->
+                </div><!--navbar-->
+            </div><!--nav-->
+        </div><!--divTop-->
+    </header>
+
+<main>
+    <%- include(body) %>
+</main>
+
+<footer>
+    <div class="footer_top"></div>
+    <div class="footer_middle">
+        <div class="footer_left"></div>
+        <div class="footer_right"></div>
+    </div>
+    <div class="footer_bottom">
+        <p>Desenvolvido por <%- authorName %> </p>
+        <p>Todos os direitos reservados&#174;</p>
+    </div>
+</footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
