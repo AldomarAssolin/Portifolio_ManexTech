@@ -1,19 +1,26 @@
 
     
     
-        <div class="container">
-            <section id="banner" class="banner">
+        <div class="sm-container m-auto">
+            <section id="banner" class="banner background_image-noite">
                 <div class="banner_content">
                     <div class="banner_content_box">
                         <div class="greeting">
                             <div class="greeting_text">
-                                <h2 class="good_morning">Olá Mundo!</h2>
-                                <h3>Seja Bem Vindo!</h3>
-                                <p class="greeting_phrase">Está um dia lindo hoje!</p>
+                                <div class="greeting_text-left d-flex flex-column justify-content-center align-items-center">
+                                    <h2 class="good_morning text-center">Boa noite!</h2>
+                                    <h3>Seja Bem Vindo(a)!</h3>
+                                    <p class="greeting_phrase">Está um dia lindo hoje!</p>
+                                </div>
+                                <div class="greeting_text-right">
+                                    <div class="greeting_text-right_icon d-flex justify-content-center align-items-center">
+                                        <i class="bi bi-code-square"></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="greeting_description">
-                                <div id="description" class="description">
-                                    <h3>Olá, eu sou Aldomar!</h3>
+                            <div class="greeting_description px-4">
+                                <div id="description" class="description d-flex flex-column justify-content-center align-items-center">
+                                    <h3 class="caption">Olá, eu sou Aldomar!</h3>
                                         <p>Tenho <span class="myAge">[Sua Idade]</span> anos e sou estudante de Análise e Desenvolvimento de Sistemas.</p>
                                     <p>Seja bem-vindo ao meu portfólio! Aqui você encontrará uma amostra dos meus projetos e habilidades de desenvolvimento.</p>
                                     <p>Continue navegando para conhecer mais sobre mim e o que posso fazer.</p>
@@ -25,6 +32,11 @@
             </section><!--banner-->
         
             <section id="about" class="about">
+                <div class="arrow_class d-flex align-items-center justify-content-around">
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                    <i class="bi bi-arrow-down-circle-fill"></i>
+                </div>
                 <div class="about_content">
                     <div class="about_content_left">
                         <div class="text_box">
@@ -47,9 +59,9 @@
                     <div class="about_content_right">
                         <div class="about_content_image w100">
                             <picture>
-                                <source media="(min-width:650px)" srcset="images/image640x480.png">
-                                <source media="(min-width:465px)" srcset="images/image320x475.png">
-                                <img src="images/image320x475.png" alt="image" style="width:auto;">
+                                <source media="(min-width:650px)" srcset="images/imagens/image-perfil.png">
+                                <source media="(min-width:465px)" srcset="images/imagens/perfil.png">
+                                <img src="images/imagens/perfil.png" alt="image" style="width:auto;">
                             </picture>
                         </div><!--about_content_image-->
                     </div><!--about_content_right-->

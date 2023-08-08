@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/AldomarAssolin/Portifolio_ManexTech#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.10.5",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "node_module": "^0.0.0",
+    "node_module": "^0.0.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.0.1"
   }
 }
