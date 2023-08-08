@@ -212,13 +212,18 @@ ul{
 
 .link_menu{
     font: var(--fnt-link_menu) !important;
-    color: var(--btn-clr) !important;
+    color: var(--clr-mark_title) !important;
     text-decoration: none !important;
+}
+
+.link_menu:link:active{
+    color: var(--bg-button_primary);
 }
 
 .special_link{
     font: var(--fnt-link_special) !important;
     color: var(--clr_dark-text_primary) !important;
+    text-decoration: none;
 }
 
 .link_buttom{
@@ -246,6 +251,7 @@ header{
 
 .menu_desktop{
     display: none;
+    list-style: none;
 }
 
 .menu_mobile{
@@ -351,7 +357,6 @@ header{
 
 .greeting{
     min-height: 80vh;
-    
 }
 
 .greeting_text{
@@ -395,8 +400,50 @@ header{
 /* FOOTER */
 
 footer{
-    padding: 6em;
     background: var(--bg-footer) !important;
+}
+
+.footer_left i{
+    font-size: 2rem;
+    color: #9d927e;
+}
+
+.footer_left .bi-whatsapp:hover{
+    color: #37f18e;
+}
+
+.footer_left .bi-linkedin:hover{
+    color: #2163f1;
+}
+
+.footer_left .bi-github:hover{
+    color: #7703ad;
+}
+
+.footer_left .bi-facebook:hover{
+    color: #5481e2;
+}
+
+.footer_left .bi-instagram:hover{
+    color: #f84cea;
+}
+
+.footer_left .bi-youtube:hover{
+    color: #f53d3d;
+}
+
+.footer_right .bi-envelope-at{
+    font-size: 2rem;
+}
+
+.footer_right .bi-telephone-forward{
+    font-size: 2rem;
+}
+
+.footer_right .bi-geo-alt-fill{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fb5940;
 }
 
 /* MEDIA QUERY */
@@ -407,8 +454,7 @@ footer{
     }
 
     .nav_mobile{
-        right: 0;
-        border: 1px solid green;
+        right: -3rem;
     }
 }
 
@@ -424,6 +470,27 @@ footer{
 
     .menu_desktop{
         display: block;
+    }
+
+    .menu_desktop li{
+        margin-left: 2.5rem;
+        padding: 0;
+    }
+
+    
+    .link_menu::after{
+        content: "";
+        display: block;
+        padding: .15rem 0;
+        width: 10%;
+        background-color: #791B00;
+        border-radius: 0 .5rem .5rem 0;
+
+        transition: var(--transition);
+    }
+
+    .link_menu:hover::after{
+        width: 100% !important;
     }
     
     .menu_mobile{
