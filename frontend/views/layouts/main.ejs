@@ -21,12 +21,12 @@
         </div>
         <div class="nav d-flex justify-content-end">
             <div class="navbar">
-                <ul class="menu_desktop">
+                <ul class="menu_desktop d-lg-flex justify-content-around align-content-center">
                     <li><a href="/" class="link_menu">Home</a></li>
                     <li><a href="/about" class="link_menu">Sobre</a></li>
                     <li><a href="/projects" class="link_menu">Projetos</a></li>
                     <li><a href="/cursos" class="link_menu">Cursos</a></li>
-                    <li><a href="" class="link_menu">Contatos</a></li>
+                    <li><a href="#" class="link_menu">Contatos</a></li>
                 </ul><!--menu_desktop-->
                 <ul class="menu_mobile">
                     <div class="icon_menu"><i class="bi bi-menu-down"></i></div>
@@ -35,7 +35,7 @@
                         <li><a href="/about" class="link_menu">Sobre</a></li>
                         <li><a href="/projects" class="link_menu">Projetos</a></li>
                         <li><a href="/cursos" class="link_menu">Cursos</a></li>
-                        <li><a href="" class="link_menu">Contatos</a></li>
+                        <li><a href="#" class="link_menu">Contatos</a></li>
                     </div>
                 </ul><!--menu_mobile-->
             </div><!--navbar-->
@@ -47,15 +47,40 @@
 </main>
 
 <footer>
-    <div class="footer_top"></div>
-    <div class="footer_middle">
-        <div class="footer_left"></div>
-        <div class="footer_right"></div>
-    </div>
-    <div class="footer_bottom">
-        <p>Desenvolvido por <%- authorName %> </p>
-        <p>Todos os direitos reservados&#174;</p>
-    </div>
+    <div class="footer_top d-flex justify-content-center align-items-center">
+        <img src="/images/logo/TechMobTransp.png" alt="Logomarca ManexTech">
+    </div><!--footer_top-->
+    <div class="footer_middle d-md-flex justify-content-md-around align-items-md-center">
+        <div class="footer_left py-3 d-flex justify-content-evenly align-items-center">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp  m-md-3 m-lg-5"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin  m-md-3 m-lg-5"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-github  m-md-3 m-lg-5"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook  m-md-3 m-lg-5"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram  m-md-3 m-lg-5"></i></a>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube  m-md-3 m-lg-5"></i></a>
+        </div><!--footer_left-->
+        <div class="footer_right py-3">
+            <span class="d-flex justify-content-around align-items-center"><i class="bi bi-geo-alt-fill"></i></span>
+            <p class="text-center text-md-start">Rua Rio Branco, 261</p>
+            <p class="text-center text-md-start">Santa Maria - RS</p>
+            <p class="text-center text-md-start">
+                <a href="tel:+4733378901" class="special_link">
+                    <i class="bi bi-telephone-forward mx-2"></i>
+                    +55 55 96618 - 6446
+                </a>
+            </p>
+            <p class="text-center">
+                <a href="mailto:manextech@gmail.com" class="special_link">
+                    <i class="bi bi-envelope-at mx-2"></i>
+                    manextech@gmail.com
+                </a>
+            </p>
+        </div><!--footer_right-->
+    </div><!--footer_middle-->
+    <div class="footer_bottom py-3 bg-black bg-gradient d-md-flex justify-content-md-around align-items-md-center">
+        <p class="text-center text-md-start">Desenvolvido por <%- authorName %> </p>
+        <p class="text-center text-md-start">Todos os direitos reservados&#174;</p>
+    </div><!--footer_bottom-->
 </footer>
 
     <script src="js/scripts.js"></script>
